@@ -159,5 +159,11 @@ data:extend({
         default_value   = false,
         order           = 'i-d',
     },
-    
+        {
+        name            = 'kill-All-Other-Menu-Simulations',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = true,
+        order           = 'i-d',
+    },
 })

@@ -1,3 +1,4 @@
+--Deprecated
 local main_menu_simulations = data.raw["utility-constants"]["default"].main_menu_simulations
 
 main_menu_simulations.solar_power_construction = nil

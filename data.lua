@@ -157,4 +157,6 @@ require('scripts/overhaul')
 --science overhaul
 require('scripts/science_overhaul')
 
+--Menu simulations
+require("scripts/Menu_Simulations/menu_simulations_scrip.lua")
 
