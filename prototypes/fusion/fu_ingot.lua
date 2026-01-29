@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_ingot_item',
+        name = 'fu_ingot',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fu_ingot_entity',
+        place_result = 'fu_ingot',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'fu_ingot_entity',
+      name = 'fu_ingot',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'fu_ingot_item',
+          result = 'fu_ingot',
       },
       crafting_categories = {'fu_ingot_category', 'smelting'},
       crafting_speed = 6,
       ingredient_count = 2,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

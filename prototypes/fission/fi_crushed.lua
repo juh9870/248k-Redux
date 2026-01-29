@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'fi_crushed_lithium_item',
+        name = 'fi_crushed_lithium',
         type = 'item',
         icon = sprite('lithium_item.png'),
         icon_size = 64,
@@ -20,7 +20,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_iron_item',
+        name = 'fi_crushed_iron',
         type = 'item',
         icon = sprite('iron_item.png'),
         icon_size = 64,
@@ -30,7 +30,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_copper_item',
+        name = 'fi_crushed_copper',
         type = 'item',
         icon = sprite('copper_item.png'),
         icon_size = 64,
@@ -40,7 +40,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_aluminum_item',
+        name = 'fi_crushed_aluminum',
         type = 'item',
         icon = sprite('aluminum_item.png'),
         icon_size = 64,
@@ -50,7 +50,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_coal_item',
+        name = 'fi_crushed_coal',
         type = 'item',
         icon = sprite('coal_item.png'),
         icon_size = 64,
@@ -60,7 +60,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_glass_item',
+        name = 'fi_crushed_glass',
         type = 'item',
         icon = sprite('glass_item.png'),
         icon_size = 64,
@@ -70,7 +70,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_stone_item',
+        name = 'fi_crushed_stone',
         type = 'item',
         icon = sprite('stone_item.png'),
         icon_size = 64,
@@ -80,7 +80,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_uranium_item',
+        name = 'fi_crushed_uranium',
         type = 'item',
         icon = sprite('uranium_item.png'),
         icon_size = 64,

@@ -39,7 +39,7 @@ throw_projectile =
 --item
 data:extend({
     {
-        name = 'el_energy_crystal_item',
+        name = 'el_energy_crystal',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -55,7 +55,7 @@ data:extend({
         weight = 1 * kg
     },
     {
-        name = 'el_energy_crystal_charged_item',
+        name = 'el_energy_crystal_charged',
         type = 'item',
         icon = sprite('charged_item.png'),
         icon_size = 64,
@@ -68,7 +68,7 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '20MJ',
-        burnt_result = 'el_energy_crystal_item',
+        burnt_result = 'el_energy_crystal',
         weight = 1 * kg
     }
 })

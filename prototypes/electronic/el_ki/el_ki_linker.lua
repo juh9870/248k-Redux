@@ -52,8 +52,8 @@ data:extend({
         alt_selection_color = {r=1, g=0, b=0, a=0.5 },
         alt_selection_cursor_box_type = "entity",
         alt_selection_mode = {"any-entity"},
-        entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"},
-        alt_entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"}]]
+        entity_filters = {"el_ki_beacon","fi_ki_beacon","fu_ki_beacon"},
+        alt_entity_filters = {"el_ki_beacon","fi_ki_beacon","fu_ki_beacon"}]]
 
         select = 
             {
@@ -62,7 +62,7 @@ data:extend({
             border_color = {r=0.79, g=0.4, b=0, a=0.7},
             cursor_box_type  = "entity",
             mode = {"any-entity"},
-            entity_filters = {"el_ki_beacon_entity", "fi_ki_beacon_entity", "fu_ki_beacon_entity"}
+            entity_filters = {"el_ki_beacon", "fi_ki_beacon", "fu_ki_beacon"}
             },
         alt_select = {
             
@@ -70,7 +70,7 @@ data:extend({
             border_color = {r=1, g=0, b=0, a=0.7},
             cursor_box_type  = "entity",
             mode = {"any-entity"},
-            entity_filters = {"el_ki_beacon_entity", "fi_ki_beacon_entity", "fu_ki_beacon_entity"}
+            entity_filters = {"el_ki_beacon", "fi_ki_beacon", "fu_ki_beacon"}
             }
     },
     {

@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_boiler_item',
+        name = 'fu_boiler',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fu_boiler_entity',
+        place_result = 'fu_boiler',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-c',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fu_boiler_entity',
+        name = 'fu_boiler',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fu_boiler_item',
+            result = 'fu_boiler',
         },
         crafting_categories = {'fu_boiler_crafting_category'},
         crafting_speed = 1,

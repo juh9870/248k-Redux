@@ -10,11 +10,11 @@ end
 --item
 data:extend({
   {
-      name = 'el_grower_item',
+      name = 'el_grower',
       type = 'item',
       icon = sprite('icon.png'),
       icon_size = 64,
-      place_result = 'el_grower_entity',
+      place_result = 'el_grower',
       stack_size = 20,
       subgroup = 'el_item_subgroup_c',
       order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
 --prototype
 {
-    name = 'el_grower_entity',
+    name = 'el_grower',
     type = 'assembling-machine',
     icon = sprite('icon.png'),
     icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
     map_color = {r=0, g=0, b=1, a=1},
     minable = {
         mining_time = 1,
-        result = 'el_grower_item',
+        result = 'el_grower',
     },
     crafting_categories = {'el_grower_category'},
     crafting_speed = 1,
     ingredient_count = 3,
-    --fixed_recipe = 'el_water_pressure_recipe',
+    --fixed_recipe = 'el_water_pressure',
     energy_source = {
         type = 'electric',
         usage_priority = 'secondary-input',

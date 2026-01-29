@@ -9,7 +9,7 @@ end
 --ore
 data:extend({
     {
-        name = 'fu_lead_ore_item',
+        name = 'fu_lead_ore',
         type = 'item',
         icon = sprite('ore_item.png'),
         icon_size = 64,
@@ -23,7 +23,7 @@ data:extend({
 --item
 data:extend({
     {
-        name = 'fu_lead_item',
+        name = 'fu_lead',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -33,7 +33,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_crushed_lead_item',
+        name = 'fu_crushed_lead',
         type = 'item',
         icon = sprite('crushed_item.png'),
         icon_size = 64,

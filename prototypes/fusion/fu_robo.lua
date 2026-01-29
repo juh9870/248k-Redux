@@ -10,22 +10,22 @@ end
 --item
 data:extend({
     {
-        name = 'fu_robo_logistic_item',
+        name = 'fu_robo_logistic',
         type = 'item',
         icon = sprite('logistic_item.png'),
         icon_size = 64,
-        place_result = 'fu_robo_logistic_entity',
+        place_result = 'fu_robo_logistic',
         stack_size = 50,
         subgroup = 'fu_item_subgroup_d',
         order = 'b-a',
 		weight = 50 * kg,
 	},
 	{
-        name = 'fu_robo_construction_item',
+        name = 'fu_robo_construction',
         type = 'item',
         icon = sprite('construction_item.png'),
         icon_size = 64,
-        place_result = 'fu_robo_construction_entity',
+        place_result = 'fu_robo_construction',
         stack_size = 50,
         subgroup = 'fu_item_subgroup_d',
         order = 'b-b',
@@ -35,7 +35,7 @@ data:extend({
 
 data:extend({
     {
-        name = 'fu_robo_logistic_entity',
+        name = 'fu_robo_logistic',
         type = 'logistic-robot',
         icon = sprite('logistic_entity_icon.png'),
         icon_size = 64,
@@ -46,7 +46,7 @@ data:extend({
 		selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
         minable = {
             mining_time = 1,
-            result = 'fu_robo_logistic_item',
+            result = 'fu_robo_logistic',
         },
         max_payload_size = 5,
 		speed = 0.24,
@@ -153,7 +153,7 @@ data:extend({
         },
 	},
 	{
-        name = 'fu_robo_construction_entity',
+        name = 'fu_robo_construction',
         type = 'construction-robot',
         icon = sprite('construction_entity_icon.png'),
         icon_size = 64,
@@ -164,7 +164,7 @@ data:extend({
 		selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
         minable = {
             mining_time = 1,
-            result = 'fu_robo_construction_item',
+            result = 'fu_robo_construction',
 		},
 		working_light = {intensity = 0.8, size = 3},
         max_payload_size = 5,

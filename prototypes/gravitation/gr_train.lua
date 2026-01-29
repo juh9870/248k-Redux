@@ -10,33 +10,33 @@ end
 --item
 data:extend({
     {
-        name = 'gr_magnet_train_item',
+        name = 'gr_magnet_train',
         type = 'item-with-entity-data',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_train_entity',
+        place_result = 'gr_magnet_train',
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-a',
         weight = 250 * kg,
     },
     {
-        name = 'gr_magnet_wagon_item',
+        name = 'gr_magnet_wagon',
         type = 'item-with-entity-data',
         icon = sprite('wagon_item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_wagon_entity',
+        place_result = 'gr_magnet_wagon',
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-b',
         weight = 250 * kg,
     },
     {
-        name = 'gr_magnet_tanker_item',
+        name = 'gr_magnet_tanker',
         type = 'item-with-entity-data',
         icon = sprite('wagon_item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_tanker_entity',
+        place_result = 'gr_magnet_tanker',
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-c',
@@ -47,7 +47,7 @@ data:extend({
 --entity
 data:extend({
     {
-        name = 'gr_magnet_train_entity',
+        name = 'gr_magnet_train',
         type = 'locomotive',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -94,7 +94,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_train_item',
+            result = 'gr_magnet_train',
         },
         --stats
         max_speed = 4.0,
@@ -272,7 +272,7 @@ data:extend({
 
     },
     {
-        name = 'gr_magnet_wagon_entity',
+        name = 'gr_magnet_wagon',
         type = 'cargo-wagon',
         icon = sprite('wagon_item.png'),
         icon_size = 64,
@@ -318,7 +318,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_wagon_item',
+            result = 'gr_magnet_wagon',
         },
         --stats
         max_speed = 4.0,
@@ -419,7 +419,7 @@ data:extend({
         },
     },
     {
-        name = 'gr_magnet_tanker_entity',
+        name = 'gr_magnet_tanker',
         type = 'fluid-wagon',
         icon = sprite('wagon_item.png'),
         icon_size = 64,
@@ -465,7 +465,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_tanker_item',
+            result = 'gr_magnet_tanker',
         },
         --stats
         max_speed = 4.0,
@@ -570,40 +570,40 @@ data:extend({
     --pre
     --===================================================
     {
-        name = 'gr_magnet_train_pre_item',
+        name = 'gr_magnet_train_pre',
         type = 'item-with-entity-data',
         icon = sprite('pre_item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_train_pre_entity',
+        place_result = 'gr_magnet_train_pre',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-a',
         weight = 500 * kg,
     },
     {
-        name = 'gr_magnet_wagon_pre_item',
+        name = 'gr_magnet_wagon_pre',
         type = 'item-with-entity-data',
         icon = sprite('wagon_pre_item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_wagon_pre_entity',
+        place_result = 'gr_magnet_wagon_pre',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-b',
         weight = 500 * kg,
     },
     {
-        name = 'gr_magnet_tanker_pre_item',
+        name = 'gr_magnet_tanker_pre',
         type = 'item-with-entity-data',
         icon = sprite('wagon_pre_item.png'),
         icon_size = 64,
-        place_result = 'gr_magnet_tanker_pre_entity',
+        place_result = 'gr_magnet_tanker_pre',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-c',
         weight = 500 * kg,
     },
     {
-        name = 'gr_magnet_train_pre_entity',
+        name = 'gr_magnet_train_pre',
         type = 'locomotive',
         icon = sprite('pre_item.png'),
         icon_size = 64,
@@ -650,7 +650,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_train_pre_item',
+            result = 'gr_magnet_train_pre',
         },
         --stats
         max_speed = 1.8,
@@ -840,7 +840,7 @@ data:extend({
 
     },
     {
-        name = 'gr_magnet_wagon_pre_entity',
+        name = 'gr_magnet_wagon_pre',
         type = 'cargo-wagon',
         icon = sprite('wagon_pre_item.png'),
         icon_size = 64,
@@ -886,7 +886,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_wagon_pre_item',
+            result = 'gr_magnet_wagon_pre',
         },
         --stats
         max_speed = 1.5,
@@ -987,7 +987,7 @@ data:extend({
         },
     },
     {
-        name = 'gr_magnet_tanker_pre_entity',
+        name = 'gr_magnet_tanker_pre',
         type = 'fluid-wagon',
         icon = sprite('wagon_pre_item.png'),
         icon_size = 64,
@@ -1033,7 +1033,7 @@ data:extend({
         allow_manual_color = false,
         minable = {
             mining_time = 1,
-            result = 'gr_magnet_tanker_pre_item',
+            result = 'gr_magnet_tanker_pre',
         },
         --stats
         max_speed = 1.5,

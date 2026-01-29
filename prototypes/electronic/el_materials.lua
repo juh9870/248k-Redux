@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'el_materials_pure_iron',
+        name = 'el_pure_iron',
         type = 'item',
         icon = sprite('pure_iron.png'),
         icon_size = 64,
@@ -20,7 +20,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'el_materials_pure_copper',
+        name = 'el_pure_copper',
         type = 'item',
         icon = sprite('pure_copper.png'),
         icon_size = 64,
@@ -30,7 +30,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'el_materials_pure_aluminum',
+        name = 'el_pure_aluminum',
         type = 'item',
         icon = sprite('pure_aluminum.png'),
         icon_size = 64,
@@ -40,7 +40,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'el_materials_ceramic',
+        name = 'el_ceramic',
         type = 'item',
         icon = sprite('ceramic.png'),
         icon_size = 64,
@@ -50,7 +50,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'el_materials_ALK',
+        name = 'el_ALK',
         type = 'item',
         icon = sprite('ALK.png'),
         icon_size = 64,

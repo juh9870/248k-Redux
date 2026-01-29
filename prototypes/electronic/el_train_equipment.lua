@@ -10,24 +10,24 @@ end
 --item
 data:extend({
     {
-        name = 'el_train_equipment_generator_item',
+        name = 'el_train_equipment_generator',
         type = 'item',
         icon = sprite('generator_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
-        place_as_equipment_result = 'el_train_equipment_generator_item',
+        place_as_equipment_result = 'el_train_equipment_generator',
         order = 'c-a',
         weight = 50 * kg
     },
     {
-        name = 'el_train_equipment_accelerator_item',
+        name = 'el_train_equipment_accelerator',
         type = 'item',
         icon = sprite('accelerator_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
-        place_as_equipment_result = 'el_train_equipment_accelerator_item',
+        place_as_equipment_result = 'el_train_equipment_accelerator',
         order = 'c-b',
         weight = 50 * kg
     },
@@ -37,7 +37,7 @@ data:extend({
 --equipment
 data:extend({
     {
-        name = 'el_train_equipment_generator_item',
+        name = 'el_train_equipment_generator',
         type = 'generator-equipment',
         power = '600kW',
         categories = {'el_train_equipment'},
@@ -59,7 +59,7 @@ data:extend({
 
     },
     {
-        name = 'el_train_equipment_accelerator_item',
+        name = 'el_train_equipment_accelerator',
         type = 'movement-bonus-equipment',
         categories = {'el_train_equipment'},
         energy_consumption = "600kW",

@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_miner_item',
+        name = 'fi_miner',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fi_miner_entity',
+        place_result = 'fi_miner',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_miner_entity',
+        name = 'fi_miner',
         type = 'mining-drill',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_miner_item',
+            result = 'fi_miner',
         },
         energy_source = {
             type = 'burner',

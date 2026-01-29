@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_fiberer_item',
+        name = 'fi_fiberer',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fi_fiberer_entity',
+        place_result = 'fi_fiberer',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_fiberer_entity',
+        name = 'fi_fiberer',
         type = 'assembling-machine',
         icon = sprite('icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_fiberer_item',
+            result = 'fi_fiberer',
         },
         crafting_categories = {'fi_fiberer_category'},
         crafting_speed = 1,

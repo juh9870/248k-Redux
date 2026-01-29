@@ -23,33 +23,33 @@ end
 --item
 data:extend({
     {
-        name = 'el_ki_beacon_item',
+        name = 'el_ki_beacon',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_ki_beacon_entity',
+        place_result = 'el_ki_beacon',
         stack_size = 20,
         subgroup = 'el_item_subgroup_f',
         order = 'b-a',
         weight = 20 * kg
     },
     {
-        name = 'fi_ki_beacon_item',
+        name = 'fi_ki_beacon',
         type = 'item',
         icon = sprite('fi.png'),
         icon_size = 64,
-        place_result = 'fi_ki_beacon_entity',
+        place_result = 'fi_ki_beacon',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_k',
         order = 'b-a',
         weight = 50 * kg
     },
     {
-        name = 'fu_ki_beacon_item',
+        name = 'fu_ki_beacon',
         type = 'item',
         icon = sprite('fu.png'),
         icon_size = 64,
-        place_result = 'fu_ki_beacon_entity',
+        place_result = 'fu_ki_beacon',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_k',
         order = 'b-a',
@@ -61,7 +61,7 @@ data:extend({
 --entity
 data:extend({
     {
-        name = 'el_ki_beacon_entity',
+        name = 'el_ki_beacon',
         type = 'beacon',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -76,7 +76,7 @@ data:extend({
         module_slots = 2,
         minable = {
             mining_time = 1,
-            result = 'el_ki_beacon_item',
+            result = 'el_ki_beacon',
         },
         distribution_effectivity = config('effectivity'),
         energy_source = {
@@ -112,7 +112,7 @@ data:extend({
     },
     --slave
     {
-        name = 'el_ki_beacon_slave_entity',
+        name = 'el_ki_beacon_slave',
         type = 'container',
         icon = sprite('slave_entity_icon.png'),
         icon_size = 64,
@@ -129,7 +129,7 @@ data:extend({
     },
 
     {
-        name = 'fi_ki_beacon_entity',
+        name = 'fi_ki_beacon',
         type = 'beacon',
         icon = sprite('fi.png'),
         icon_size = 64,
@@ -144,7 +144,7 @@ data:extend({
         module_slots = 6,
         minable = {
             mining_time = 1,
-            result = 'fi_ki_beacon_item',
+            result = 'fi_ki_beacon',
         },
         distribution_effectivity = config('effectivity_2'),
         energy_source = {
@@ -180,7 +180,7 @@ data:extend({
     },
     --slave
     {
-        name = 'fi_ki_beacon_slave_entity',
+        name = 'fi_ki_beacon_slave',
         type = 'container',
         icon = sprite('slave_entity_icon.png'),
         flags = {"placeable-off-grid"},
@@ -197,7 +197,7 @@ data:extend({
         module_slots = 2,
     },
     {
-        name = 'fu_ki_beacon_entity',
+        name = 'fu_ki_beacon',
         type = 'beacon',
         icon = sprite('fu.png'),
         icon_size = 64,
@@ -212,7 +212,7 @@ data:extend({
         module_slots = 18,
         minable = {
             mining_time = 1,
-            result = 'fu_ki_beacon_item',
+            result = 'fu_ki_beacon',
         },
         distribution_effectivity = config('effectivity_3'),
         energy_source = {
@@ -248,7 +248,7 @@ data:extend({
     },
     --slave
     {
-        name = 'fu_ki_beacon_slave_entity',
+        name = 'fu_ki_beacon_slave',
         type = 'container',
         icon = sprite('slave_entity_icon.png'),
         icon_size = 64,

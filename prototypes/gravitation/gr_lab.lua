@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'gr_lab_item',
+        name = 'gr_lab',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'gr_lab_entity',
+        place_result = 'gr_lab',
         stack_size = 20,
         subgroup = 'gr_item_subgroup_c',
         order = 'a-a',
@@ -26,7 +26,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'gr_lab_entity',
+        name = 'gr_lab',
         type = 'lab',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -38,7 +38,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'gr_lab_item',
+            result = 'gr_lab',
         },
         crafting_speed = 1,
         energy_source = {
@@ -50,13 +50,13 @@ data:extend({
         --animation
         
         inputs = {
-            "gr_materials_red_pack_item",
-            "gr_materials_green_pack_item",
-            "gr_materials_blue_pack_item",
-            "gr_materials_purple_pack_item",
-            "gr_materials_yellow_pack_item",
-            "gr_materials_grey_pack_item",
-            "gr_materials_white_pack_item"
+            "gr_red_pack",
+            "gr_green_pack",
+            "gr_blue_pack",
+            "gr_purple_pack",
+            "gr_yellow_pack",
+            "gr_grey_pack",
+            "gr_white_pack"
         },
 
         off_animation = {

@@ -40,33 +40,33 @@ end
 --item
 data:extend({
     {
-        name = 'el_ki_core_item',
+        name = 'el_ki_core',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_ki_core_entity',
+        place_result = 'el_ki_core',
         stack_size = 20,
         subgroup = 'el_item_subgroup_f',
         order = 'b-b',
         weight = 200 * kg
     },
     {
-        name = 'fi_ki_core_item',
+        name = 'fi_ki_core',
         type = 'item',
         icon = sprite('fi.png'),
         icon_size = 64,
-        place_result = 'fi_ki_core_entity',
+        place_result = 'fi_ki_core',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_k',
         order = 'b-b',
         weight = 500 * kg
     },
     {
-        name = 'fu_ki_core_item',
+        name = 'fu_ki_core',
         type = 'item',
         icon = sprite('fu.png'),
         icon_size = 64,
-        place_result = 'fu_ki_core_entity',
+        place_result = 'fu_ki_core',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_k',
         order = 'b-b',
@@ -78,7 +78,7 @@ data:extend({
 --entity
 data:extend({
     {
-        name = 'el_ki_core_entity',
+        name = 'el_ki_core',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -92,9 +92,9 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'el_ki_core_item',
+            result = 'el_ki_core',
         },
-        fixed_recipe = 'el_ki_cpu_memory_recipe',
+        fixed_recipe = 'el_ki_cpu_memory',
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
@@ -197,7 +197,7 @@ data:extend({
     },
     --slave
     {
-        name = 'el_ki_core_slave_entity',
+        name = 'el_ki_core_slave',
         type = 'beacon',
         icon = sprite('slave_entity_icon.png'),
         icon_size = 64,
@@ -223,7 +223,7 @@ data:extend({
     },
     --slave container
     {
-        name = 'el_ki_core_slave_container_entity',
+        name = 'el_ki_core_slave_container',
         type = 'container',
         icon = sprite('slave_container_entity_icon.png'),
         icon_size = 64,
@@ -239,7 +239,7 @@ data:extend({
     },
     --===============================================================
     {
-        name = 'fi_ki_core_entity',
+        name = 'fi_ki_core',
         type = 'assembling-machine',
         icon = sprite('fi.png'),
         icon_size = 64,
@@ -253,9 +253,9 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_ki_core_item',
+            result = 'fi_ki_core',
         },
-        fixed_recipe = 'fi_ki_cpu_memory_circuit_recipe',
+        fixed_recipe = 'fi_ki_cpu_memory_circuit',
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
@@ -376,7 +376,7 @@ data:extend({
     },
     --slave
     {
-        name = 'fi_ki_core_slave_entity',
+        name = 'fi_ki_core_slave',
         type = 'beacon',
         icon = sprite('slave_entity_icon.png'),
         icon_size = 64,
@@ -402,7 +402,7 @@ data:extend({
     },
     --slave container
     {
-        name = 'fi_ki_core_slave_container_entity',
+        name = 'fi_ki_core_slave_container',
         type = 'container',
         icon = sprite('slave_container_entity_icon.png'),
         icon_size = 64,
@@ -418,7 +418,7 @@ data:extend({
     },
     --===============================================================
     {
-        name = 'fu_ki_core_entity',
+        name = 'fu_ki_core',
         type = 'assembling-machine',
         icon = sprite('fu.png'),
         icon_size = 64,
@@ -432,9 +432,9 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fu_ki_core_item',
+            result = 'fu_ki_core',
         },
-        fixed_recipe = 'fu_ki_cpu_memory_circuit_recipe',
+        fixed_recipe = 'fu_ki_cpu_memory_circuit',
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
@@ -583,7 +583,7 @@ data:extend({
     },
     --slave
     {
-        name = 'fu_ki_core_slave_entity',
+        name = 'fu_ki_core_slave',
         type = 'beacon',
         icon = sprite('slave_entity_icon.png'),
         icon_size = 64,
@@ -609,7 +609,7 @@ data:extend({
     },
     --slave container
     {
-        name = 'fu_ki_core_slave_container_entity',
+        name = 'fu_ki_core_slave_container',
         type = 'container',
         icon = sprite('slave_container_entity_icon.png'),
         icon_size = 64,

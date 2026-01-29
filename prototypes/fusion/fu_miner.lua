@@ -10,18 +10,18 @@ end
 --item
 data:extend({
     {
-        name = 'fu_miner_item',
+        name = 'fu_miner',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fu_miner_entity',
+        place_result = 'fu_miner',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
         weight = 500 * kg,
     },
     {
-        name = 'fu_miner_fuel_item',
+        name = 'fu_miner_fuel',
         type = 'item',
         icon = sprite('drill.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'fu_miner_entity',
+      name = 'fu_miner',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -51,14 +51,14 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'fu_miner_item',
+          result = 'fu_miner',
       },
-      fast_replaceable_group = 'fu_miner_entity',
-      next_upgrade = 'fu_miner_entity_2',
+      fast_replaceable_group = 'fu_miner',
+      next_upgrade = 'fu_miner_2',
       crafting_categories = {'fu_miner_category'},
       crafting_speed = 1,
       ingredient_count = 2,
-      fixed_recipe = 'fu_mining_recipe',
+      fixed_recipe = 'fu_mining',
       energy_source = {
         type = "burner",
         fuel_inventory_size = 1,
@@ -87,11 +87,11 @@ data:extend({
           --lines_per_file = 2,
           frame_count = 1,
           --animation_speed = 0.2,
-          shift = {0,-0.9} 
+          shift = {0,-0.9}
         },
         working_visualisations = {
           {
-            animation = 
+            animation =
             {
               filename = sprite('animation.png'),
               size = {512*2,512*2},
@@ -100,7 +100,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.2,
-              shift = {0,-0.9} 
+              shift = {0,-0.9}
             }
           }
         },
@@ -131,8 +131,8 @@ data:extend({
   },
 })
 
-local miner2 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
-miner2.name = 'fu_miner_entity_2'
+local miner2 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner2.name = 'fu_miner_2'
 miner2.icons = {
   {
       icon = miner2.icon
@@ -142,12 +142,12 @@ miner2.icons = {
   }
 }
 miner2.icon = nil
-miner2.minable.result = 'fu_miner_item_2'
+miner2.minable.result = 'fu_miner_2'
 miner2.crafting_speed = 2
-miner2.next_upgrade = 'fu_miner_entity_3'
+miner2.next_upgrade = 'fu_miner_3'
 
-local miner3 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
-miner3.name = 'fu_miner_entity_3'
+local miner3 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner3.name = 'fu_miner_3'
 miner3.icons = {
   {
       icon = miner3.icon
@@ -157,13 +157,13 @@ miner3.icons = {
   }
 }
 miner3.icon = nil
-miner3.minable.result = 'fu_miner_item_3'
+miner3.minable.result = 'fu_miner_3'
 miner3.crafting_speed = 3
 miner3.base_productivity = 0.5
-miner3.next_upgrade = 'fu_miner_entity_4'
+miner3.next_upgrade = 'fu_miner_4'
 
-local miner4 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
-miner4.name = 'fu_miner_entity_4'
+local miner4 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner4.name = 'fu_miner_4'
 miner4.icons = {
   {
       icon = miner4.icon
@@ -173,13 +173,13 @@ miner4.icons = {
   }
 }
 miner4.icon = nil
-miner4.minable.result = 'fu_miner_item_4'
+miner4.minable.result = 'fu_miner_4'
 miner4.crafting_speed = 8
 miner4.base_productivity = 4
 
 --items
-local miner2_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
-miner2_item.name = 'fu_miner_item_2'
+local miner2_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner2_item.name = 'fu_miner_2'
 miner2_item.icons = {
   {
       icon = miner2_item.icon
@@ -189,11 +189,11 @@ miner2_item.icons = {
   }
 }
 miner2_item.icon = nil
-miner2_item.place_result = 'fu_miner_entity_2'
+miner2_item.place_result = 'fu_miner_2'
 miner2_item.weight = 500 * kg
 
-local miner3_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
-miner3_item.name = 'fu_miner_item_3'
+local miner3_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner3_item.name = 'fu_miner_3'
 miner3_item.icons = {
   {
       icon = miner3_item.icon
@@ -203,13 +203,13 @@ miner3_item.icons = {
   }
 }
 miner3_item.icon = nil
-miner3_item.place_result = 'fu_miner_entity_3'
+miner3_item.place_result = 'fu_miner_3'
 miner3_item.subgroup = 'fu_item_subgroup_c'
 miner3_item.order = 'a-b'
 miner3_item.weight = 500 * kg
 
-local miner4_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
-miner4_item.name = 'fu_miner_item_4'
+local miner4_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner4_item.name = 'fu_miner_4'
 miner4_item.icons = {
   {
       icon = miner4_item.icon
@@ -219,7 +219,7 @@ miner4_item.icons = {
   }
 }
 miner4_item.icon = nil
-miner4_item.place_result = 'fu_miner_entity_4'
+miner4_item.place_result = 'fu_miner_4'
 miner4_item.subgroup = 'gr_item_subgroup_c'
 miner4_item.order = 'a-b'
 miner4_item.weight = 500 * kg,

@@ -26,11 +26,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_water_generator_item',
+        name = 'el_water_generator',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_water_generator_entity',
+        place_result = 'el_water_generator',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-d',
@@ -43,7 +43,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'el_water_generator_entity',
+        name = 'el_water_generator',
         type = 'generator',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -55,7 +55,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'el_water_generator_item',
+            result = 'el_water_generator',
         },
         --energy
         maximum_temperature = 500,

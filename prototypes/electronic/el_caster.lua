@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_caster_item',
+        name = 'el_caster',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'el_caster_entity',
+        place_result = 'el_caster',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'el_caster_entity',
+      name = 'el_caster',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'el_caster_item',
+          result = 'el_caster',
       },
       crafting_categories = {'el_caster_category'},
       crafting_speed = 1,
       ingredient_count = 2,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

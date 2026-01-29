@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_charger_item',
+        name = 'el_charger',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'el_charger_entity',
+        place_result = 'el_charger',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'el_charger_entity',
+      name = 'el_charger',
       --type = 'furnace',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
@@ -40,13 +40,13 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'el_charger_item',
+          result = 'el_charger',
       },
       crafting_categories = {'el_charger_category'},
       --result_inventory_size = 1,
       --source_inventory_size = 1,
       crafting_speed = 1,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

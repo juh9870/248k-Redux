@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'fu_materials_energy_crystal',
+        name = 'fu_energy_crystal',
         type = 'item',
         icon = sprite('energy_crystal.png'),
         icon_size = 64,
@@ -26,7 +26,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'fu_materials_energy_charged_crystal',
+        name = 'fu_energy_charged_crystal',
         type = 'item',
         icon = sprite('energy_crystal_charged.png'),
         icon_size = 64,
@@ -39,11 +39,11 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '300MJ',
-        burnt_result = 'fu_materials_energy_crystal',
+        burnt_result = 'fu_energy_crystal',
         weight = 10 * kg,
     },
     {
-        name = 'fu_materials_refined_crystal',
+        name = 'fu_refined_crystal',
         type = 'item',
         icon = sprite('refined_crystal.png'),
         icon_size = 64,
@@ -53,7 +53,7 @@ data:extend({
         weight = 10 * kg,
     },
     {
-        name = 'fu_materials_pure_lead',
+        name = 'fu_pure_lead',
         type = 'item',
         icon = sprite('pure_lead.png'),
         icon_size = 64,
@@ -63,7 +63,7 @@ data:extend({
         weight = 4 * kg,
     },
     {
-        name = 'fu_materials_KFK',
+        name = 'fu_KFK',
         type = 'item',
         icon = sprite('KFK.png'),
         icon_size = 64,
@@ -73,7 +73,7 @@ data:extend({
         weight = 4 * kg,
     },
     {
-        name = 'fu_materials_TIM',
+        name = 'fu_TIM',
         type = 'item',
         icon = sprite('TIM.png'),
         icon_size = 64,
@@ -83,7 +83,7 @@ data:extend({
         weight = 4 * kg,
     },
     {
-        name = 'fu_materials_magnet',
+        name = 'fu_magnet',
         type = 'item',
         icon = sprite('magnet.png'),
         icon_size = 64,
@@ -93,7 +93,7 @@ data:extend({
         weight = 4 * kg,
     },
     {
-        name = 'fu_materials_carbon_fiber',
+        name = 'fu_carbon_fiber',
         type = 'item',
         icon = sprite('carbon_fiber.png'),
         icon_size = 64,
@@ -103,7 +103,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_plasma_card',
+        name = 'fu_plasma_card',
         type = 'item',
         icon = sprite('plasma_card.png'),
         icon_size = 64,
@@ -113,7 +113,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'fu_materials_laser_card',
+        name = 'fu_laser_card',
         type = 'item',
         icon = sprite('laser_card.png'),
         icon_size = 64,
@@ -123,7 +123,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'fu_materials_magnet_card',
+        name = 'fu_magnet_card',
         type = 'item',
         icon = sprite('magnet_card.png'),
         icon_size = 64,
@@ -133,7 +133,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'fu_materials_fusion_card',
+        name = 'fu_fusion_card',
         type = 'item',
         icon = sprite('fusion_card.png'),
         icon_size = 64,
@@ -143,7 +143,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'fu_materials_empty_container',
+        name = 'fu_empty_container',
         type = 'item',
         icon = sprite('empty_container.png'),
         icon_size = 64,
@@ -153,7 +153,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_charged_container',
+        name = 'fu_charged_container',
         type = 'item',
         icon = sprite('charged_container.png'),
         icon_size = 64,
@@ -163,7 +163,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_stone',
+        name = 'fu_stone',
         type = 'item',
         icon = sprite('stone.png'),
         icon_size = 64,
@@ -173,7 +173,7 @@ data:extend({
         weight = 20 * kg,
     },
     {
-        name = 'fu_materials_gold_ingot',
+        name = 'fu_gold_ingot',
         type = 'item',
         icon = sprite('gold_ingot.png'),
         icon_size = 64,
@@ -183,7 +183,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_titan_ingot',
+        name = 'fu_titan_ingot',
         type = 'item',
         icon = sprite('titan_ingot.png'),
         icon_size = 64,
@@ -193,7 +193,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_neodym_ingot',
+        name = 'fu_neodym_ingot',
         type = 'item',
         icon = sprite('neodym_ingot.png'),
         icon_size = 64,
@@ -203,7 +203,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_lead_ingot',
+        name = 'fu_lead_ingot',
         type = 'item',
         icon = sprite('lead_ingot.png'),
         icon_size = 64,
@@ -213,7 +213,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'fu_materials_slag',
+        name = 'fu_slag',
         type = 'item',
         icon = sprite('slag.png'),
         icon_size = 64,
@@ -223,7 +223,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'fu_materials_upgrade',
+        name = 'fu_upgrade',
         type = 'item',
         icon = sprite('upgrade.png'),
         icon_size = 64,

@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'fi_energy_crystal_item',
+        name = 'fi_energy_crystal',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -26,7 +26,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_energy_crystal_charged_item',
+        name = 'fi_energy_crystal_charged',
         type = 'item',
         icon = sprite('charged_item.png'),
         icon_size = 64,
@@ -39,11 +39,11 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '100MJ',
-        burnt_result = 'fi_energy_crystal_item',
+        burnt_result = 'fi_energy_crystal',
         weight = 2 * kg
     },
     {
-        name = 'fi_crushed_crystal_item',
+        name = 'fi_crushed_crystal',
         type = 'item',
         icon = sprite('crushed_item.png'),
         icon_size = 64,
@@ -53,7 +53,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_catalyst_crystal_item',
+        name = 'fi_catalyst_crystal',
         type = 'item',
         icon = sprite('catalyst_item.png'),
         icon_size = 64,
@@ -63,7 +63,7 @@ data:extend({
         weight = 10 * kg
     },
     {
-        name = 'fi_base_crystal_item',
+        name = 'fi_base_crystal',
         type = 'item',
         icon = sprite('base_item.png'),
         icon_size = 64,

@@ -16,11 +16,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_tank_item',
+        name = 'el_tank',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_tank_entity',
+        place_result = 'el_tank',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-c',
@@ -33,7 +33,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'el_tank_entity',
+        name = 'el_tank',
         type = 'storage-tank',
         icon = sprite('item.png'),
         icon_size = 64,
@@ -41,7 +41,7 @@ data:extend({
         --minable
         minable = {
             mining_time = 1,
-            result = 'el_tank_item',
+            result = 'el_tank',
         },
         max_health = 300,
         corpse = 'small-remnants',

@@ -10,22 +10,22 @@ end
 --item
 data:extend({
     {
-        name = 'fi_robo_port_item',
+        name = 'fi_robo_port',
         type = 'item',
         icon = sprite('port_item.png'),
         icon_size = 64,
-        place_result = 'fi_robo_port_entity',
+        place_result = 'fi_robo_port',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
         weight = 100 * kg,
     },
     {
-        name = 'fi_robo_charger_item',
+        name = 'fi_robo_charger',
         type = 'item',
         icon = sprite('charger_item.png'),
         icon_size = 64,
-        place_result = 'fi_robo_charger_entity',
+        place_result = 'fi_robo_charger',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
@@ -38,7 +38,7 @@ data:extend({
 data:extend({
     --prototype port
     {
-        name = 'fi_robo_port_entity',
+        name = 'fi_robo_port',
         type = 'roboport',
         icon = sprite('port_entity_icon.png'),
         icon_size = 64,
@@ -50,7 +50,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_robo_port_item',
+            result = 'fi_robo_port',
         },
         energy_source = {
             type = 'electric',
@@ -132,7 +132,7 @@ data:extend({
     },
     --charger
     {
-        name = 'fi_robo_charger_entity',
+        name = 'fi_robo_charger',
         type = 'roboport',
         icon = sprite('charger_entity_icon.png'),
         icon_size = 64,
@@ -144,7 +144,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_robo_charger_item',
+            result = 'fi_robo_charger',
         },
         energy_source = {
             type = 'electric',

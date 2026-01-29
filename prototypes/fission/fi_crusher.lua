@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_crusher_item',
+        name = 'fi_crusher',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fi_crusher_entity',
+        place_result = 'fi_crusher',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-c',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_crusher_entity',
+        name = 'fi_crusher',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_crusher_item',
+            result = 'fi_crusher',
         },
         crafting_categories = {'fi_crushing'},
         crafting_speed = 1,

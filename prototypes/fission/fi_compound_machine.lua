@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_compound_machine_item',
+        name = 'fi_compound_machine',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fi_compound_machine_entity',
+        place_result = 'fi_compound_machine',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'fi_compound_machine_entity',
+      name = 'fi_compound_machine',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -39,11 +39,11 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'fi_compound_machine_item',
+          result = 'fi_compound_machine',
       },
       crafting_categories = {'fi_compound_machine_category'},
       crafting_speed = 1,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

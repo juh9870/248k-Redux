@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_ki_cpu_item',
+        name = 'el_ki_cpu',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_ki_cpu_entity',
+        place_result = 'el_ki_cpu',
         stack_size = 20,
         subgroup = 'el_item_subgroup_f',
         order = 'a-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'el_ki_cpu_entity',
+        name = 'el_ki_cpu',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'el_ki_cpu_item',
+            result = 'el_ki_cpu',
         },
         crafting_categories = {'el_ki_cpu_category'},
         crafting_speed = 1,
         ingredient_count = 3,
-        --fixed_recipe = 'el_ki_cpu_fluid_recipe',
+        --fixed_recipe = 'el_ki_cpu_fluid',
         energy_source = {
             type = 'electric',
             usage_priority = 'secondary-input',

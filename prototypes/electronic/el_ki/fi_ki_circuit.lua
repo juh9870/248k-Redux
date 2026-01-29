@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_ki_circuit_item',
+        name = 'fi_ki_circuit',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fi_ki_circuit_entity',
+        place_result = 'fi_ki_circuit',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_k',
         order = 'a-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_ki_circuit_entity',
+        name = 'fi_ki_circuit',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_ki_circuit_item',
+            result = 'fi_ki_circuit',
         },
         crafting_categories = {'fi_ki_circuit_category'},
         crafting_speed = 1,
         ingredient_count = 3,
-        --fixed_recipe = 'fi_ki_circuit_fluid_recipe',
+        --fixed_recipe = 'fi_ki_circuit_fluid',
         energy_source = {
             type = 'electric',
             usage_priority = 'secondary-input',

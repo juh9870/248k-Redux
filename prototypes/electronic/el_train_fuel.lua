@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'el_train_fuel_diesel_item',
+        name = 'el_train_fuel_diesel',
         type = 'item',
         icon = sprite('diesel_item.png'),
         icon_size = 64,
@@ -25,7 +25,7 @@ data:extend({
         weight = 1 * kg
     },
     {
-        name = 'el_train_fuel_diesel_energized_item',
+        name = 'el_train_fuel_diesel_energized',
         type = 'item',
         icon = sprite('diesel_energized_item.png'),
         icon_size = 64,

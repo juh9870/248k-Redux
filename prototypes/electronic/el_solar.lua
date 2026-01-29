@@ -26,11 +26,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_solar_item',
+        name = 'el_solar',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_solar_entity',
+        place_result = 'el_solar',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-c',
@@ -43,7 +43,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'el_solar_entity',
+        name = 'el_solar',
         type = 'solar-panel',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -51,7 +51,7 @@ data:extend({
         --minable
         minable = {
             mining_time = 1,
-            result = 'el_solar_item',
+            result = 'el_solar',
         },
         max_health = 150,
         corpse = 'small-remnants',

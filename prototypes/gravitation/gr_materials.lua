@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'gr_materials_fusion_cell_item',
+        name = 'gr_fusion_cell',
         type = 'item',
         icon = sprite('fusion_cell_item.png'),
         icon_size = 64,
@@ -20,7 +20,7 @@ data:extend({
         weight = 200 * kg,
     },
     {
-        name = 'gr_materials_stack_down_item',
+        name = 'gr_stack_down',
         type = 'item',
         icon = sprite('stack_down_item.png'),
         icon_size = 64,
@@ -30,7 +30,7 @@ data:extend({
         weight = 200 * kg,
     },
     {
-        name = 'gr_materials_stack_up_item',
+        name = 'gr_stack_up',
         type = 'item',
         icon = sprite('stack_up_item.png'),
         icon_size = 64,
@@ -40,7 +40,7 @@ data:extend({
         weight = 200 * kg,
     },
     {
-        name = 'gr_materials_cooked_crystal_item',
+        name = 'gr_cooked_crystal',
         type = 'item',
         icon = sprite('cooked_crystal_item.png'),
         icon_size = 64,
@@ -50,7 +50,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_refined_crystal_item',
+        name = 'gr_refined_crystal',
         type = 'item',
         icon = sprite('refined_crystal_item.png'),
         icon_size = 64,
@@ -60,7 +60,7 @@ data:extend({
         weight = 10 * kg,
     },
     {
-        name = 'gr_materials_crushed_exotic_item',
+        name = 'gr_crushed_exotic',
         type = 'item',
         icon = sprite('crushed_exotic_item.png'),
         icon_size = 64,
@@ -70,7 +70,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'gr_materials_stabilizer_item',
+        name = 'gr_stabilizer',
         type = 'item',
         icon = sprite('stabilizer_item.png'),
         icon_size = 64,
@@ -83,7 +83,7 @@ data:extend({
 
 
     {
-        name = 'gr_materials_red_item',
+        name = 'gr_red',
         type = 'item',
         icon = sprite('red_item.png'),
         icon_size = 64,
@@ -93,7 +93,7 @@ data:extend({
         weight = 15.625 * kg,
     },
     {
-        name = 'gr_materials_red_data_item',
+        name = 'gr_red_data',
         type = 'item',
         icon = sprite('red_data_item.png'),
         icon_size = 64,
@@ -103,7 +103,7 @@ data:extend({
         weight = 15.625 * kg,
     },
     {
-        name = 'gr_materials_green_item',
+        name = 'gr_green',
         type = 'item',
         icon = sprite('green_item.png'),
         icon_size = 64,
@@ -113,7 +113,7 @@ data:extend({
         weight = 31.25 * kg,
     },
     {
-        name = 'gr_materials_green_data_item',
+        name = 'gr_green_data',
         type = 'item',
         icon = sprite('green_data_item.png'),
         icon_size = 64,
@@ -123,7 +123,7 @@ data:extend({
         weight = 31.25 * kg,
     },
     {
-        name = 'gr_materials_blue_item',
+        name = 'gr_blue',
         type = 'item',
         icon = sprite('blue_item.png'),
         icon_size = 64,
@@ -133,7 +133,7 @@ data:extend({
         weight = 62.5 * kg,
     },
     {
-        name = 'gr_materials_blue_data_item',
+        name = 'gr_blue_data',
         type = 'item',
         icon = sprite('blue_data_item.png'),
         icon_size = 64,
@@ -143,7 +143,7 @@ data:extend({
         weight = 62.5 * kg,
     },
     {
-        name = 'gr_materials_purple_item',
+        name = 'gr_purple',
         type = 'item',
         icon = sprite('purple_item.png'),
         icon_size = 64,
@@ -153,7 +153,7 @@ data:extend({
         weight = 125 * kg,
     },
     {
-        name = 'gr_materials_purple_data_item',
+        name = 'gr_purple_data',
         type = 'item',
         icon = sprite('purple_data_item.png'),
         icon_size = 64,
@@ -163,7 +163,7 @@ data:extend({
         weight = 125 * kg,
     },
     {
-        name = 'gr_materials_yellow_item',
+        name = 'gr_yellow',
         type = 'item',
         icon = sprite('yellow_item.png'),
         icon_size = 64,
@@ -173,7 +173,7 @@ data:extend({
         weight = 250 * kg,
     },
     {
-        name = 'gr_materials_yellow_data_item',
+        name = 'gr_yellow_data',
         type = 'item',
         icon = sprite('yellow_data_item.png'),
         icon_size = 64,
@@ -183,7 +183,7 @@ data:extend({
         weight = 250 * kg,
     },
     {
-        name = 'gr_materials_grey_item',
+        name = 'gr_grey',
         type = 'item',
         icon = sprite('grey_item.png'),
         icon_size = 64,
@@ -193,7 +193,7 @@ data:extend({
         weight = 500 * kg,
     },
     {
-        name = 'gr_materials_grey_data_item',
+        name = 'gr_grey_data',
         type = 'item',
         icon = sprite('grey_data_item.png'),
         icon_size = 64,
@@ -203,7 +203,7 @@ data:extend({
         weight = 500 * kg,
     },
     {
-        name = 'gr_materials_white_item',
+        name = 'gr_white',
         type = 'item',
         icon = sprite('white_item.png'),
         icon_size = 64,
@@ -213,7 +213,7 @@ data:extend({
         weight = 1000 * kg,
     },
     {
-        name = 'gr_materials_white_data_item',
+        name = 'gr_white_data',
         type = 'item',
         icon = sprite('white_data_item.png'),
         icon_size = 64,
@@ -225,7 +225,7 @@ data:extend({
 
 
     {
-        name = 'gr_materials_data_item',
+        name = 'gr_data',
         type = 'item',
         icon = sprite('data_item.png'),
         icon_size = 64,
@@ -235,7 +235,7 @@ data:extend({
         weight = 10 * kg,
     },
     {
-        name = 'gr_materials_stacked_data_item',
+        name = 'gr_stacked_data',
         type = 'item',
         icon = sprite('data_stacked_item.png'),
         icon_size = 64,
@@ -246,7 +246,7 @@ data:extend({
     },
 
     {
-        name = 'gr_materials_red_pack_item',
+        name = 'gr_red_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('red_pack_item.png'),
@@ -257,7 +257,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_green_pack_item',
+        name = 'gr_green_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('green_pack_item.png'),
@@ -268,7 +268,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_blue_pack_item',
+        name = 'gr_blue_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('blue_pack_item.png'),
@@ -279,7 +279,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_purple_pack_item',
+        name = 'gr_purple_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('purple_pack_item.png'),
@@ -290,7 +290,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_yellow_pack_item',
+        name = 'gr_yellow_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('yellow_pack_item.png'),
@@ -301,7 +301,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_grey_pack_item',
+        name = 'gr_grey_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('grey_pack_item.png'),
@@ -312,7 +312,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_white_pack_item',
+        name = 'gr_white_pack',
         type = 'tool',
         durability = 1,
         icon = sprite('white_pack_item.png'),
@@ -324,18 +324,18 @@ data:extend({
     },
 
     {
-        name = 'gr_materials_charge_item',
+        name = 'gr_charge',
         type = 'item',
         icon = sprite('charge_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
-        place_as_equipment_result = 'gr_materials_charge_item',
+        place_as_equipment_result = 'gr_charge',
         order = 'c-a',
         weight = 1000 * kg,
     },
     {
-        name = 'gr_materials_charge_item',
+        name = 'gr_charge',
         type = 'active-defense-equipment',
         attack_parameters =
     {
@@ -421,20 +421,20 @@ data:extend({
     },
     {
         type = "capsule",
-        name = "gr_materials_charge_remote",
+        name = "gr_charge_remote",
         icon = "__base__/graphics/icons/discharge-defense-equipment-controller.png",
         icon_size = 64, icon_mipmaps = 4,
         capsule_action =
         {
           type = "equipment-remote",
-          equipment = "gr_materials_charge_item"
+          equipment = "gr_charge"
         },
         subgroup = 'gr_item_subgroup_b',
         order = "c-b",
         stack_size = 1
     },
     {
-        name = 'gr_materials_circuit',
+        name = 'gr_circuit',
         type = 'item',
         icon = sprite('circuit.png'),
         icon_size = 64,
@@ -444,7 +444,7 @@ data:extend({
         weight = 4 * kg,
     },
     {
-        name = 'gr_materials_gold_wire',
+        name = 'gr_gold_wire',
         type = 'item',
         icon = sprite('gold_wire.png'),
         icon_size = 64,
@@ -454,7 +454,7 @@ data:extend({
         weight = 1 * kg,
     },
     {
-        name = 'gr_materials_pcb',
+        name = 'gr_pcb',
         type = 'item',
         icon = sprite('pcb.png'),
         icon_size = 64,
@@ -464,7 +464,7 @@ data:extend({
         weight = 2 * kg,
     },
     {
-        name = 'gr_materials_magnet',
+        name = 'gr_magnet',
         type = 'item',
         icon = sprite('magnet.png'),
         icon_size = 64,
@@ -474,7 +474,7 @@ data:extend({
         weight = 5 * kg,
     },
     {
-        name = 'gr_materials_plasma_cube',
+        name = 'gr_plasma_cube',
         type = 'item',
         icon = sprite('plasma_cube.png'),
         icon_size = 64,
@@ -484,7 +484,7 @@ data:extend({
         weight = 10 * kg,
     },
     {
-        name = 'gr_materials_upgrade',
+        name = 'gr_upgrade',
         type = 'item',
         icon = sprite('upgrade.png'),
         icon_size = 64,

@@ -11,7 +11,7 @@ end
 data:extend({
     --space probes
     {
-        name = 'fu_space_probe_sputnik_item',
+        name = 'fu_space_probe_sputnik',
         type = 'item',
         icon = sprite('sputnik_item.png'),
         icon_size = 64,
@@ -19,13 +19,13 @@ data:extend({
         subgroup = 'fu_item_subgroup_d',
         send_to_orbit_mode = "automated",
         rocket_launch_products = {
-            {type = "item", name = 'fu_space_probe_data_card_1_item', amount = 10}
+            {type = "item", name = 'fu_space_probe_data_card_1', amount = 10}
         },
         order = 'd-a',
         weight = 1000 * kg
     },
     {
-        name = 'fu_space_probe_probe_item',
+        name = 'fu_space_probe_probe',
         type = 'item',
         icon = sprite('probe_item.png'),
         icon_size = 64,
@@ -33,13 +33,13 @@ data:extend({
         subgroup = 'fu_item_subgroup_d',
         send_to_orbit_mode = "automated",
         rocket_launch_products = {
-            {type = "item", name = 'fu_space_probe_data_card_3_item', amount = 10}
+            {type = "item", name = 'fu_space_probe_data_card_3', amount = 10}
         },
         order = 'd-b',
         weight = 1000 * kg
     },
     {
-        name = 'fu_space_probe_deep_probe_item',
+        name = 'fu_space_probe_deep_probe',
         type = 'item',
         icon = sprite('deep_probe_item.png'),
         icon_size = 64,
@@ -47,14 +47,14 @@ data:extend({
         subgroup = 'fu_item_subgroup_d',
         send_to_orbit_mode = "automated",
         rocket_launch_products = {
-            {type = "item", name = 'fu_space_probe_ore_item', amount = 100}
+            {type = "item", name = 'fu_space_probe_ore', amount = 100}
         },
         order = 'd-c',
         weight = 1000 * kg
     },
     --data cards
     {
-        name = 'fu_space_probe_data_card_1_item',
+        name = 'fu_space_probe_data_card_1',
         type = 'item',
         icon = sprite('data_card_1_item.png'),
         icon_size = 64,
@@ -64,7 +64,7 @@ data:extend({
         weight = 1 * kg
     },
     {
-        name = 'fu_space_probe_data_card_2_item',
+        name = 'fu_space_probe_data_card_2',
         type = 'item',
         icon = sprite('data_card_2_item.png'),
         icon_size = 64,
@@ -74,7 +74,7 @@ data:extend({
         weight = 1 * kg
     },
     {
-        name = 'fu_space_probe_data_card_3_item',
+        name = 'fu_space_probe_data_card_3',
         type = 'item',
         icon = sprite('data_card_3_item.png'),
         icon_size = 64,
@@ -86,7 +86,7 @@ data:extend({
     -- matter
     --ore
     {
-        name = 'fu_space_probe_ore_item',
+        name = 'fu_space_probe_ore',
         type = 'item',
         icon = sprite('ore_item.png'),
         icon_size = 64,
@@ -96,7 +96,7 @@ data:extend({
         weight = 10 * kg
     },
     {
-        name = 'fu_space_probe_down_matter_item',
+        name = 'fu_space_probe_down_matter',
         type = 'item',
         icon = sprite('down_matter_item.png'),
         icon_size = 64,
@@ -106,7 +106,7 @@ data:extend({
         weight = 100 * kg
     },
     {
-        name = 'fu_space_probe_up_matter_item',
+        name = 'fu_space_probe_up_matter',
         type = 'item',
         icon = sprite('up_matter_item.png'),
         icon_size = 64,
@@ -117,7 +117,7 @@ data:extend({
     },
     --science
     {
-        name = 'fu_space_probe_science_item',
+        name = 'fu_space_probe_science',
         type = 'tool',
         icon = sprite('science_item.png'),
         durability = 1,

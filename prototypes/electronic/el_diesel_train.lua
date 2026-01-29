@@ -77,11 +77,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_diesel_train_item',
+        name = 'el_diesel_train',
         type = 'item-with-entity-data',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_diesel_train_entity',
+        place_result = 'el_diesel_train',
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
         order = 'a-a',
@@ -93,7 +93,7 @@ data:extend({
 --entity
 data:extend({
     {
-        name = 'el_diesel_train_entity',
+        name = 'el_diesel_train',
         type = 'locomotive',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -117,7 +117,7 @@ data:extend({
         allow_remote_driving = true,
         minable = {
             mining_time = 1,
-            result = 'el_diesel_train_item',
+            result = 'el_diesel_train',
         },
         --stats
         max_speed = 1.20,

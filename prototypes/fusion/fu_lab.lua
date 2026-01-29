@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_lab_item',
+        name = 'fu_lab',
         type = 'item',
         icon = sprite('icon'),
         icon_size = 64,
-        place_result = 'fu_lab_entity',
+        place_result = 'fu_lab',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-a',
@@ -25,7 +25,7 @@ data:extend({
 --entity
 data:extend({
 {
-    name = "fu_lab_entity",
+    name = "fu_lab",
     type = "lab",
     icon = sprite("icon"),
     icon_size = 64,
@@ -37,7 +37,7 @@ data:extend({
     map_color = {r=0, g=0, b=1, a=1},
     minable = {
         mining_time = 1,
-        result = "fu_lab_item",
+        result = "fu_lab",
     },
     researching_speed = 10,
     energy_source = {
@@ -53,7 +53,7 @@ data:extend({
         "production-science-pack",
         "space-science-pack",
         "utility-science-pack",
-        "fu_space_probe_science_item",
+        "fu_space_probe_science",
         "fi_ki_science",
         "fu_ki_science"
     },

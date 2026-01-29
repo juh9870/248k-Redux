@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_castor_item',
+        name = 'fi_castor',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fi_castor_entity',
+        place_result = 'fi_castor',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_castor_entity',
+        name = 'fi_castor',
         type = 'assembling-machine',
         icon = sprite('icon.png'),
         icon_size = 64,
@@ -39,9 +39,9 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_castor_item',
+            result = 'fi_castor',
         },
-        fixed_recipe = 'fi_decay_waste_recipe',
+        fixed_recipe = 'fi_decay_waste',
         crafting_categories = {'fi_castor_category'},
         crafting_speed = 1,
         energy_source = {

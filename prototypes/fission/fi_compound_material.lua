@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'fi_compound_material_item',
+        name = 'fi_compound_material',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,

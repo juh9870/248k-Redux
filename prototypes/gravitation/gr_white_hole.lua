@@ -10,18 +10,18 @@ end
 --item
 data:extend({
     {
-        name = 'gr_white_hole_item',
+        name = 'gr_white_hole',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'gr_white_hole_entity',
+        place_result = 'gr_white_hole',
         stack_size = 1,
         subgroup = 'gr_item_subgroup_c',
         order = 'e-a',
         weight = 1000 * kg,
     },
     {
-        name = "gr_white_hole_entity",
+        name = "gr_white_hole",
         type = "furnace",
         icon = sprite('item.png'),
         icon_size = 64,
@@ -33,7 +33,7 @@ data:extend({
         map_color = {r=1, g=0, b=0, a=0.5},
         minable = {
             mining_time = 1,
-            result = 'gr_white_hole_item',
+            result = 'gr_white_hole',
         },
         result_inventory_size = 1,
         source_inventory_size = 1,

@@ -11,7 +11,7 @@ end
 data:extend({
     {
         --u 235 + u 238
-        name = 'fi_basic_fuel_item',
+        name = 'fi_basic_fuel',
         type = 'item',
         icon = sprite('basic_item.png'),
         icon_size = 64,
@@ -21,12 +21,12 @@ data:extend({
         fuel_value = '10GJ',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'a-a',
-        burnt_result = 'fi_used_basic_fuel_item',
+        burnt_result = 'fi_used_basic_fuel',
         weight = 100 * kg
     },
     {
         --u 238 + th 232
-        name = 'fi_basic_thorium_fuel_item',
+        name = 'fi_basic_thorium_fuel',
         type = 'item',
         icon = sprite('basic_thorium_item.png'),
         icon_size = 64,
@@ -36,12 +36,12 @@ data:extend({
         fuel_value = '6GJ',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'a-b',
-        burnt_result = 'fi_used_basic_thorium_fuel_item',
+        burnt_result = 'fi_used_basic_thorium_fuel',
         weight = 100 * kg
     },
     {
         --u 238 + pu 239
-        name = 'fi_advanced_fuel_item',
+        name = 'fi_advanced_fuel',
         type = 'item',
         icon = sprite('advanced_item.png'),
         icon_size = 64,
@@ -51,12 +51,12 @@ data:extend({
         fuel_value = '14GJ',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'b-a',
-        burnt_result = 'fi_used_advanced_fuel_item',
+        burnt_result = 'fi_used_advanced_fuel',
         weight = 100 * kg
     },
     {
         --u 233 + u 238
-        name = 'fi_advanced_thorium_fuel_item',
+        name = 'fi_advanced_thorium_fuel',
         type = 'item',
         icon = sprite('advanced_thorium_item.png'),
         icon_size = 64,
@@ -66,12 +66,12 @@ data:extend({
         fuel_value = '10GJ',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'b-b',
-        burnt_result = 'fi_used_advanced_thorium_fuel_item',
+        burnt_result = 'fi_used_advanced_thorium_fuel',
         weight = 100 * kg
     },
     {   
         --u 235 + pu 239
-        name = 'fi_pure_fuel_item',
+        name = 'fi_pure_fuel',
         type = 'item',
         icon = sprite('pure_item.png'),
         icon_size = 64,
@@ -81,12 +81,12 @@ data:extend({
         fuel_value = '28GJ',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'c-a',
-        burnt_result = 'fi_used_pure_fuel_item',
+        burnt_result = 'fi_used_pure_fuel',
         weight = 100 * kg
     },
     {   
         --used_basic
-        name = 'fi_used_basic_fuel_item',
+        name = 'fi_used_basic_fuel',
         type = 'item',
         icon = sprite('used_basic_item.png'),
         icon_size = 64,
@@ -97,7 +97,7 @@ data:extend({
     },
     {   
         --used_basic_thorium
-        name = 'fi_used_basic_thorium_fuel_item',
+        name = 'fi_used_basic_thorium_fuel',
         type = 'item',
         icon = sprite('used_basic_thorium_item.png'),
         icon_size = 64,
@@ -108,7 +108,7 @@ data:extend({
     },
     {   
         --used_advanced
-        name = 'fi_used_advanced_fuel_item',
+        name = 'fi_used_advanced_fuel',
         type = 'item',
         icon = sprite('used_advanced_item.png'),
         icon_size = 64,
@@ -119,7 +119,7 @@ data:extend({
     },
     {   
         --used_advanced_thorium
-        name = 'fi_used_advanced_thorium_fuel_item',
+        name = 'fi_used_advanced_thorium_fuel',
         type = 'item',
         icon = sprite('used_advanced_thorium_item.png'),
         icon_size = 64,
@@ -130,7 +130,7 @@ data:extend({
     },
     {   
         --used_pure
-        name = 'fi_used_pure_fuel_item',
+        name = 'fi_used_pure_fuel',
         type = 'item',
         icon = sprite('used_pure_item.png'),
         icon_size = 64,
@@ -141,7 +141,7 @@ data:extend({
     },
     {   
         --u33
-        name = 'fi_uranium233_item',
+        name = 'fi_uranium233',
         type = 'item',
         icon = sprite('uranium233_item.png'),
         icon_size = 64,
@@ -152,7 +152,7 @@ data:extend({
     },
     {   
         --pu239
-        name = 'fi_plutonium239_item',
+        name = 'fi_plutonium239',
         type = 'item',
         icon = sprite('plutonium239_item.png'),
         icon_size = 64,
@@ -163,7 +163,7 @@ data:extend({
     },
     {   
         --th232
-        name = 'fi_thorium232_item',
+        name = 'fi_thorium232',
         type = 'item',
         icon = sprite('thorium232_item.png'),
         icon_size = 64,
@@ -174,7 +174,7 @@ data:extend({
     },
     --train crystal fuel
     {
-        name = 'fi_fuel_train_crystal_item',
+        name = 'fi_fuel_train_crystal',
         type = 'item',
         icon = sprite('train_crystal_item.png'),
         icon_size = 64,

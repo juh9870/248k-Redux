@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'gr_charger_item',
+        name = 'gr_charger',
         type = 'item',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
-        place_result = 'gr_charger_entity',
+        place_result = 'gr_charger',
         stack_size = 20,
         subgroup = 'gr_item_subgroup_c',
         order = 'a-a',
@@ -26,7 +26,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'gr_charger_entity',
+        name = 'gr_charger',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -38,7 +38,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'gr_charger_item',
+            result = 'gr_charger',
         },
         crafting_categories = {"gr_charger_category"},
         crafting_speed = 1,

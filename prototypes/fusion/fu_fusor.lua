@@ -10,18 +10,18 @@ end
 --item
 data:extend({
     {
-        name = 'fu_fusor_item',
+        name = 'fu_fusor',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fu_fusor_entity',
+        place_result = 'fu_fusor',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-a',
         weight = 100 * kg,
     },
     {
-        name = 'fu_tech_sign_item',
+        name = 'fu_tech_sign',
         type = 'item',
         icon = sprite('tech_sign_item.png'),
         icon_size = 64,
@@ -37,7 +37,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fu_fusor_entity',
+        name = 'fu_fusor',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -49,7 +49,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fu_fusor_item',
+            result = 'fu_fusor',
         },
         crafting_categories = {'fu_fusor_crafting_category'},
         crafting_speed = 1,

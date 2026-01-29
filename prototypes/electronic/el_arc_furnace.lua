@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'el_arc_furnace_item',
+        name = 'el_arc_furnace',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'el_arc_furnace_entity',
+        place_result = 'el_arc_furnace',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'el_arc_furnace_entity',
+      name = 'el_arc_furnace',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -39,11 +39,11 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'el_arc_furnace_item',
+          result = 'el_arc_furnace',
       },
       crafting_categories = {'el_arc_furnace_category'},
       crafting_speed = 1,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

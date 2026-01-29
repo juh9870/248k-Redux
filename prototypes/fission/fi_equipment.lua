@@ -10,35 +10,35 @@ end
 --item
 data:extend({
     {
-        name = 'fi_train_equipment_generator_item',
+        name = 'fi_train_equipment_generator',
         type = 'item',
         icon = sprite('generator_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        place_as_equipment_result = 'fi_train_equipment_generator_item',
+        place_as_equipment_result = 'fi_train_equipment_generator',
         order = 'a-a',
         weight = 200 * kg
     },
     {
-        name = 'fi_equipment_player_reactor_item',
+        name = 'fi_equipment_player_reactor',
         type = 'item',
         icon = sprite('player_reactor_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        place_as_equipment_result = 'fi_equipment_player_reactor_item',
+        place_as_equipment_result = 'fi_equipment_player_reactor',
         order = 'a-b',
         weight = 500 * kg
     },
     {
-        name = 'fi_equipment_player_shield_item',
+        name = 'fi_equipment_player_shield',
         type = 'item',
         icon = sprite('player_shield_item.png'),
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        place_as_equipment_result = 'fi_equipment_player_shield_item',
+        place_as_equipment_result = 'fi_equipment_player_shield',
         order = 'a-c',
         weight = 100 * kg
     },
@@ -48,7 +48,7 @@ data:extend({
 --equipment
 data:extend({
     {
-        name = 'fi_train_equipment_generator_item',
+        name = 'fi_train_equipment_generator',
         type = 'generator-equipment',
         power = '2400kW',
         categories = {'fi_train_equipment'},
@@ -70,7 +70,7 @@ data:extend({
 
     },
     {
-        name = 'fi_equipment_player_reactor_item',
+        name = 'fi_equipment_player_reactor',
         type = 'generator-equipment',
         power = '600kW',
         categories = {'armor'},
@@ -92,7 +92,7 @@ data:extend({
 
     },
     {
-        name = 'fi_equipment_player_shield_item',
+        name = 'fi_equipment_player_shield',
         type = 'energy-shield-equipment',
         energy_per_shield = '20kJ',
         max_shield_value = 400,

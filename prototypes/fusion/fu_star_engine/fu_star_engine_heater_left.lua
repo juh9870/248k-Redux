@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_star_engine_heater_left_item',
+        name = 'fu_star_engine_heater_left',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fu_star_engine_heater_left_entity',
+        place_result = 'fu_star_engine_heater_left',
         stack_size = 1,
         subgroup = 'fu_item_subgroup_d-b',
         order = 'c-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fu_star_engine_heater_left_entity',
+        name = 'fu_star_engine_heater_left',
         type = 'assembling-machine',
         icon = sprite('icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fu_star_engine_heater_left_item',
+            result = 'fu_star_engine_heater_left',
         },
         crafting_categories = {'fu_star_engine_heater_crafting_category'},
         crafting_speed = 1,

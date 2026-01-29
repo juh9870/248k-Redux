@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_crafter_item',
+        name = 'fi_crafter',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fi_crafter_entity',
+        place_result = 'fi_crafter',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-a',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_crafter_entity',
+        name = 'fi_crafter',
         type = 'assembling-machine',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -40,7 +40,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_crafter_item',
+            result = 'fi_crafter',
         },
         --fast_replaceable_group = "assembling-machine",
         crafting_categories = {'advanced-crafting','crafting','smelting','fi_crafting_category'},

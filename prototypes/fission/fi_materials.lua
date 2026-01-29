@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'fi_industrial_steel_item',
+        name = 'fi_industrial_steel',
         type = 'item',
         icon = sprite('industrial_steel_item.png'),
         icon_size = 64,
@@ -20,7 +20,7 @@ data:extend({
         weight = 2.5 * kg
     },
     {
-        name = 'fi_industrial_steel_blend_item',
+        name = 'fi_industrial_steel_blend',
         type = 'item',
         icon = sprite('industrial_steel_blend_item.png'),
         icon_size = 64,
@@ -30,7 +30,7 @@ data:extend({
         weight = 10 * kg
     },
     {
-        name = 'fi_materials_natural_fiber',
+        name = 'fi_natural_fiber',
         type = 'item',
         icon = sprite('natural_fiber.png'),
         icon_size = 64,
@@ -40,7 +40,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_glass_fiber',
+        name = 'fi_glass_fiber',
         type = 'item',
         icon = sprite('glass_fiber.png'),
         icon_size = 64,
@@ -50,7 +50,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_glass',
+        name = 'fi_glass',
         type = 'item',
         icon = sprite('glass.png'),
         icon_size = 64,
@@ -60,7 +60,7 @@ data:extend({
         weight = 2.5 * kg
     },
     {
-        name = 'fi_materials_flourite',
+        name = 'fi_flourite',
         type = 'item',
         icon = sprite('flourite.png'),
         icon_size = 64,
@@ -70,7 +70,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_pure_gold',
+        name = 'fi_pure_gold',
         type = 'item',
         icon = sprite('pure_gold.png'),
         icon_size = 64,
@@ -80,7 +80,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_pure_titan',
+        name = 'fi_pure_titan',
         type = 'item',
         icon = sprite('pure_titan.png'),
         icon_size = 64,
@@ -90,7 +90,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_pure_neodym',
+        name = 'fi_pure_neodym',
         type = 'item',
         icon = sprite('pure_neodym.png'),
         icon_size = 64,
@@ -100,7 +100,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_gold',
+        name = 'fi_gold',
         type = 'item',
         icon = sprite('gold.png'),
         icon_size = 64,
@@ -110,7 +110,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_neodym',
+        name = 'fi_neodym',
         type = 'item',
         icon = sprite('neodym.png'),
         icon_size = 64,
@@ -120,7 +120,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_titan',
+        name = 'fi_titan',
         type = 'item',
         icon = sprite('titan.png'),
         icon_size = 64,
@@ -130,7 +130,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_NFK',
+        name = 'fi_NFK',
         type = 'item',
         icon = sprite('NFK.png'),
         icon_size = 64,
@@ -140,7 +140,7 @@ data:extend({
         weight = 2.5 * kg
     },
     {
-        name = 'fi_materials_GFK',
+        name = 'fi_GFK',
         type = 'item',
         icon = sprite('GFK.png'),
         icon_size = 64,
@@ -150,7 +150,7 @@ data:extend({
         weight = 2.5* kg
     },
     {
-        name = 'fi_materials_waste',
+        name = 'fi_waste',
         type = 'item',
         icon = sprite('waste.png'),
         icon_size = 64,
@@ -160,7 +160,7 @@ data:extend({
         weight = 500 * kg
     },
     {
-        name = 'fi_materials_solution',
+        name = 'fi_solution',
         type = 'item',
         icon = sprite('waste.png'),
         icon_size = 64,
@@ -170,7 +170,7 @@ data:extend({
         weight = 500 * kg
     },
     {
-        name = 'fi_materials_empty_solution',
+        name = 'fi_empty_solution',
         type = 'item',
         icon = sprite('empty_solution.png'),
         icon_size = 64,
@@ -180,7 +180,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_solution',
+        name = 'fi_solution',
         type = 'item',
         icon = sprite('solution.png'),
         icon_size = 64,
@@ -190,7 +190,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_rich_powder',
+        name = 'fi_rich_powder',
         type = 'item',
         icon = sprite('rich_powder.png'),
         icon_size = 64,
@@ -200,7 +200,7 @@ data:extend({
         weight = 2 * kg
     },
     {
-        name = 'fi_materials_rich_solution',
+        name = 'fi_rich_solution',
         type = 'item',
         icon = sprite('rich_solution.png'),
         icon_size = 64,
@@ -210,7 +210,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_dirty_solution',
+        name = 'fi_dirty_solution',
         type = 'item',
         icon = sprite('dirty_solution.png'),
         icon_size = 64,
@@ -220,7 +220,7 @@ data:extend({
         weight = 4 * kg
     },
     {
-        name = 'fi_materials_upgrade',
+        name = 'fi_upgrade',
         type = 'item',
         icon = sprite('upgrade.png'),
         icon_size = 64,

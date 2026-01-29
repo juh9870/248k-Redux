@@ -26,22 +26,22 @@ end
 --item
 data:extend({
     {
-        name = 'el_burner_item',
+        name = 'el_burner',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'el_burner_entity',
+        place_result = 'el_burner',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-a',
         weight = 50 * kg
     },
     {
-        name = 'el_burner_kerosene_item',
+        name = 'el_burner_kerosene',
         type = 'item',
         icon = sprite('kerosene_item.png'),
         icon_size = 64,
-        place_result = 'el_burner_kerosene_entity',
+        place_result = 'el_burner_kerosene',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-a',
@@ -55,7 +55,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'el_burner_entity',
+        name = 'el_burner',
         type = 'burner-generator',
         icon = sprite('entity_icon.png'),
         icon_size = 64,
@@ -63,7 +63,7 @@ data:extend({
         --minable
         minable = {
             mining_time = 1,
-            result = 'el_burner_item',
+            result = 'el_burner',
         },
         max_health = 150,
         corpse = 'small-remnants',
@@ -114,7 +114,7 @@ data:extend({
     
     --kerosene
     {
-        name = 'el_burner_kerosene_entity',
+        name = 'el_burner_kerosene',
         type = 'generator',
         icon = sprite('kerosene_entity_icon.png'),
         icon_size = 64,
@@ -122,7 +122,7 @@ data:extend({
         --minable
         minable = {
             mining_time = 1,
-            result = 'el_burner_kerosene_item',
+            result = 'el_burner_kerosene',
         },
         max_health = 150,
         corpse = 'small-remnants',

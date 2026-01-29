@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fi_refinery_item',
+        name = 'fi_refinery',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fi_refinery_entity',
+        place_result = 'fi_refinery',
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-c',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
     --prototype
     {
-        name = 'fi_refinery_entity',
+        name = 'fi_refinery',
         type = 'assembling-machine',
         icon = sprite('icon.png'),
         icon_size = 64,
@@ -39,7 +39,7 @@ data:extend({
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
-            result = 'fi_refinery_item',
+            result = 'fi_refinery',
         },
         crafting_categories = {'fi_refining'},
         crafting_speed = 1,

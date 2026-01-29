@@ -10,7 +10,7 @@ end
 --item
 data:extend({
     {
-        name = 'el_ammo_item',
+        name = 'el_ammo',
         type = 'ammo',
         icon = sprite('item.png'),
         icon_size = 64,

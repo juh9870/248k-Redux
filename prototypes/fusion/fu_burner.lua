@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_burner_item',
+        name = 'fu_burner',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        place_result = 'fu_burner_entity',
+        place_result = 'fu_burner',
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-a',
@@ -25,7 +25,7 @@ data:extend({
 --entity
 data:extend({
 {
-    name = 'fu_burner_entity',
+    name = 'fu_burner',
     type = 'furnace',
     icon = sprite('entity_icon.png'),
     icon_size = 64,
@@ -33,7 +33,7 @@ data:extend({
     --minable
     minable = {
         mining_time = 1,
-        result = 'fu_burner_item',
+        result = 'fu_burner',
     },
     max_health = 150,
     corpse = 'small-remnants',

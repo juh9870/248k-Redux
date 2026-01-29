@@ -10,11 +10,11 @@ end
 --item
 data:extend({
     {
-        name = 'fu_magnet_item',
+        name = 'fu_magnet',
         type = 'item',
         icon = sprite('icon.png'),
         icon_size = 64,
-        place_result = 'fu_magnet_entity',
+        place_result = 'fu_magnet',
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-b',
@@ -27,7 +27,7 @@ data:extend({
 data:extend({
   --prototype
   {
-      name = 'fu_magnet_entity',
+      name = 'fu_magnet',
       type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
@@ -39,12 +39,12 @@ data:extend({
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
-          result = 'fu_magnet_item',
+          result = 'fu_magnet',
       },
       crafting_categories = {'fu_magnet_category'},
       crafting_speed = 1,
       ingredient_count = 2,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      --fixed_recipe = 'el_water_pressure',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

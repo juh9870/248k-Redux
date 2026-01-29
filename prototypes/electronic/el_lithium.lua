@@ -9,7 +9,7 @@ end
 --ore
 data:extend({
     {
-        name = 'el_lithium_ore_item',
+        name = 'el_lithium_ore',
         type = 'item',
         icon = sprite('ore_item.png'),
         icon_size = 64,
@@ -23,7 +23,7 @@ data:extend({
 --item
 data:extend({
     {
-        name = 'el_lithium_item',
+        name = 'el_lithium',
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
