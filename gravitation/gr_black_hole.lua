@@ -1,0 +1,96 @@
+--local functions
+local function config(name)
+    return settings.startup['gr_black_hole_'..name].value
+end
+
+local function sprite(name)
+    return '__248k-Redux-graphics__/ressources/gravitation/gr_black_hole/gr_black_hole_'..name
+end
+
+--item
+data:extend({
+    {
+        name = 'gr_black_hole',
+        type = 'item',
+        icon = sprite('item.png'),
+        icon_size = 64,
+        place_result = 'gr_black_hole_base',
+        stack_size = 1,
+        subgroup = 'gr_item_subgroup_c',
+        order = 'e-a',
+        weight = 1000 * kg,
+    },
+    {
+        name = 'gr_black_hole_base',
+        type = 'container',
+        icon = sprite('item.png'),
+        icon_size = 64,
+        collision_box = {{-5.8,-3.8},{5.8,5.8}},
+        selection_box = {{-6,-4},{6,6}},
+        selection_priority = 60,
+        picture = {
+            filename = sprite('base_animation.png'),
+            width = 512*2,
+            height = 512*2,
+            scale = 0.4,
+            shift = {0,0.5}
+        },
+        inventory_size = 80,
+        flags = {"player-creation","placeable-neutral","not-rotatable"},
+        max_health = 1500,
+        corpse = 'big-remnants',
+        map_color = {r=1, g=0, b=0, a=0.5},
+        minable = {
+            mining_time = 1,
+            result = 'gr_black_hole',
+        },
+        integration_patch_render_layer = "higher-object-under",
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_single(
+      universal_connector_template,
+        { variation = 25, main_offset = util.by_pixel(-127.375, -18.25), shadow_offset = util.by_pixel(-127.375, -18.25), show_shadow = true }
+    )
+    },
+    {
+        name = "gr_black_hole_energy",
+        type = "electric-energy-interface",
+        energy_source = {
+            type = "electric",
+            render_no_power_icon = false,
+            buffer_capacity = "1TJ",
+            usage_priority = "primary-output",
+            max_input_flow = "0W",
+            max_output_flow = "1TW",
+            --drain = "1GW"
+        },
+        light = {
+            type = 'basic',
+            intensity = 10,
+            size = 20,
+            color = {r=0,g=0,b=0.75}
+        },
+        render_layer = "higher-object-above",
+        animation =  {
+            filename = sprite('working_animation.png'),
+            size = {512*2,512*2},
+            scale = 0.4,
+            line_length = 4,
+            frame_count = 4,
+            animation_speed = 0.5,
+            shift = {0,0.5}
+        },
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 18,
+                color = {r=0.08 ,g=0.70 ,b=0.87 },
+              }
+            }
+        },
+        continuous_animation = true
+    }
+})
+
+

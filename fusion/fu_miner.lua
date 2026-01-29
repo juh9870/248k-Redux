@@ -1,0 +1,228 @@
+--local functions
+local function config(name)
+    return settings.startup['fu_miner_'..name].value
+end
+
+local function sprite(name)
+    return '__248k-Redux-graphics__/ressources/fusion/fu_miner/fu_miner_'..name
+end
+
+--item
+data:extend({
+    {
+        name = 'fu_miner',
+        type = 'item',
+        icon = sprite('icon.png'),
+        icon_size = 64,
+        place_result = 'fu_miner',
+        stack_size = 20,
+        subgroup = 'fi_item_subgroup_c',
+        order = 'a-b',
+        weight = 500 * kg,
+    },
+    {
+        name = 'fu_miner_fuel',
+        type = 'item',
+        icon = sprite('drill.png'),
+        icon_size = 64,
+        stack_size = 20,
+        subgroup = 'fi_item_subgroup_b',
+        order = 'a-b',
+        fuel_category = 'fu_miner_fuel_category',
+        fuel_value = '80MJ',
+        weight = 5 * kg,
+    },
+
+})
+
+--entity
+data:extend({
+  --prototype
+  {
+      name = 'fu_miner',
+      type = 'assembling-machine',
+      icon = sprite('icon.png'),
+      icon_size = 64,
+      flags = {"player-creation","placeable-neutral"},
+      max_health = 300,
+      corpse = 'big-remnants',
+      collision_box = {{-5.4,-5.4},{5.4,5.4}},
+      selection_box = {{-5.5,-5.5},{5.5,5.5}},
+      map_color = {r=0, g=0, b=1, a=1},
+      minable = {
+          mining_time = 1,
+          result = 'fu_miner',
+      },
+      fast_replaceable_group = 'fu_miner',
+      next_upgrade = 'fu_miner_2',
+      crafting_categories = {'fu_miner_category'},
+      crafting_speed = 1,
+      ingredient_count = 2,
+      fixed_recipe = 'fu_mining',
+      energy_source = {
+        type = "burner",
+        fuel_inventory_size = 1,
+        effectivity = 1,
+        emissions = {emissions_per_minute = 20},
+        fuel_categories = {"fu_miner_fuel_category"},
+        smoke = {
+            {
+                name = "smoke",
+                tape = "trival-smoke",
+                frequency = 60,
+                position = {0,-3},
+                --deviation = {x = -2, y = -2},
+                duration = 1,
+            },
+        },
+      },
+      energy_usage = '1MW',
+      --animation
+      graphics_set = {
+        animation = {
+          filename = sprite('base.png'),
+          size = {512*2,512*2},
+          scale = 0.4,
+          line_length = 1,
+          --lines_per_file = 2,
+          frame_count = 1,
+          --animation_speed = 0.2,
+          shift = {0,-0.9}
+        },
+        working_visualisations = {
+          {
+            animation =
+            {
+              filename = sprite('animation.png'),
+              size = {512*2,512*2},
+              scale = 0.4,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.2,
+              shift = {0,-0.9}
+            }
+          }
+        },
+      },
+      --[[working_sound =
+      {
+        sound = {filename = "__base__/sound/burner-mining-drill.ogg" },
+        apparent_volume = 0.3,]]
+      },
+       working_sound = {
+        fade_in_ticks = 4,
+        fade_out_ticks = 20,
+        sound = {
+          {
+            filename = "__base__/sound/burner-mining-drill-1.ogg",
+            modifiers = {
+              type = "tips-and-tricks",
+              volume_multiplier = 0.8
+            },
+            volume = 0.6
+          },
+          {
+            filename = "__base__/sound/burner-mining-drill-2.ogg",
+            modifiers = "SERPENT PLACEHOLDER" --[=[ ref [""]["mining-drill"]["burner-mining-drill"].working_sound.sound[1].modifiers ]=],
+            volume = 0.6
+          }
+        }
+  },
+})
+
+local miner2 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner2.name = 'fu_miner_2'
+miner2.icons = {
+  {
+      icon = miner2.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/fi_upgrade.png"
+  }
+}
+miner2.icon = nil
+miner2.minable.result = 'fu_miner_2'
+miner2.crafting_speed = 2
+miner2.next_upgrade = 'fu_miner_3'
+
+local miner3 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner3.name = 'fu_miner_3'
+miner3.icons = {
+  {
+      icon = miner3.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/fu_upgrade.png"
+  }
+}
+miner3.icon = nil
+miner3.minable.result = 'fu_miner_3'
+miner3.crafting_speed = 3
+miner3.base_productivity = 0.5
+miner3.next_upgrade = 'fu_miner_4'
+
+local miner4 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner'])
+miner4.name = 'fu_miner_4'
+miner4.icons = {
+  {
+      icon = miner4.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/gr_upgrade.png"
+  }
+}
+miner4.icon = nil
+miner4.minable.result = 'fu_miner_4'
+miner4.crafting_speed = 8
+miner4.base_productivity = 4
+
+--items
+local miner2_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner2_item.name = 'fu_miner_2'
+miner2_item.icons = {
+  {
+      icon = miner2_item.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/fi_upgrade.png"
+  }
+}
+miner2_item.icon = nil
+miner2_item.place_result = 'fu_miner_2'
+miner2_item.weight = 500 * kg
+
+local miner3_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner3_item.name = 'fu_miner_3'
+miner3_item.icons = {
+  {
+      icon = miner3_item.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/fu_upgrade.png"
+  }
+}
+miner3_item.icon = nil
+miner3_item.place_result = 'fu_miner_3'
+miner3_item.subgroup = 'fu_item_subgroup_c'
+miner3_item.order = 'a-b'
+miner3_item.weight = 500 * kg
+
+local miner4_item = util.table.deepcopy(data.raw['item']['fu_miner'])
+miner4_item.name = 'fu_miner_4'
+miner4_item.icons = {
+  {
+      icon = miner4_item.icon
+  },
+  {
+      icon = "__248k-Redux-graphics__/ressources/icons/gr_upgrade.png"
+  }
+}
+miner4_item.icon = nil
+miner4_item.place_result = 'fu_miner_4'
+miner4_item.subgroup = 'gr_item_subgroup_c'
+miner4_item.order = 'a-b'
+miner4_item.weight = 500 * kg,
+
+
+data:extend({miner2,miner3,miner4,miner2_item,miner3_item,miner4_item})

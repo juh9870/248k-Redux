@@ -1,0 +1,142 @@
+--local functions
+local function config(name)
+    return settings.startup['fu_space_probe_'..name].value
+end
+
+local function sprite(name)
+    return '__248k-Redux-graphics__/ressources/fusion/fu_space_probe/fu_space_probe_'..name
+end
+
+--item
+data:extend({
+    --space probes
+    {
+        name = 'fu_space_probe_sputnik',
+        type = 'item',
+        icon = sprite('sputnik_item.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fu_item_subgroup_d',
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_data_card_1', amount = 10}
+        },
+        order = 'd-a',
+        weight = 1000 * kg
+    },
+    {
+        name = 'fu_space_probe_probe',
+        type = 'item',
+        icon = sprite('probe_item.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fu_item_subgroup_d',
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_data_card_3', amount = 10}
+        },
+        order = 'd-b',
+        weight = 1000 * kg
+    },
+    {
+        name = 'fu_space_probe_deep_probe',
+        type = 'item',
+        icon = sprite('deep_probe_item.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fu_item_subgroup_d',
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_ore', amount = 100}
+        },
+        order = 'd-c',
+        weight = 1000 * kg
+    },
+    --data cards
+    {
+        name = 'fu_space_probe_data_card_1',
+        type = 'item',
+        icon = sprite('data_card_1_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_a',
+        order = 'd-a',
+        weight = 1 * kg
+    },
+    {
+        name = 'fu_space_probe_data_card_2',
+        type = 'item',
+        icon = sprite('data_card_2_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_a',
+        order = 'd-b',
+        weight = 1 * kg
+    },
+    {
+        name = 'fu_space_probe_data_card_3',
+        type = 'item',
+        icon = sprite('data_card_3_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_a',
+        order = 'd-c',
+        weight = 1 * kg
+    },
+    -- matter
+    --ore
+    {
+        name = 'fu_space_probe_ore',
+        type = 'item',
+        icon = sprite('ore_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_d',
+        order = 'd-d',
+        weight = 10 * kg
+    },
+    {
+        name = 'fu_space_probe_down_matter',
+        type = 'item',
+        icon = sprite('down_matter_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_a',
+        order = 'd-d',
+        weight = 100 * kg
+    },
+    {
+        name = 'fu_space_probe_up_matter',
+        type = 'item',
+        icon = sprite('up_matter_item.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fu_item_subgroup_a',
+        order = 'd-e',
+        weight = 100 * kg
+    },
+    --science
+    {
+        name = 'fu_space_probe_science',
+        type = 'tool',
+        icon = sprite('science_item.png'),
+        durability = 1,
+        icon_size = 64,
+        stack_size = 10000,
+        subgroup = 'fu_item_subgroup_b',
+        order = 'f-a',
+        weight = 0.5 * kg,
+    },
+    {
+        name = 'fu_space_probe_science_item_1',
+        type = 'item',
+        icon = sprite('science_item_1.png'),
+        durability = 1,
+        icon_size = 64,
+        stack_size = 10000,
+        subgroup = 'fu_item_subgroup_b',
+        order = 'f-b',
+        weight = 0.5 * kg,
+    },
+
+})
