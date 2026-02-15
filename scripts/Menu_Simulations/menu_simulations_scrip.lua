@@ -1,7 +1,7 @@
 local menu_simulations = data.raw["utility-constants"]["default"].main_menu_simulations
 
 local function filename(name)
-    return '__248k-Redux__/prototypes/Menu_Simulations/'..name
+    return '__248k-Redux-juh-temporary-fork__/prototypes/Menu_Simulations/'..name
 end
 
 --Remove all other menu simulations, this is only for testing

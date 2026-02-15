@@ -1,10 +1,10 @@
 {
-    "name": "248k-Redux",
+    "name": "248k-Redux-juh-temporary-fork",
     "version": "0.1.32",
-    "title": "248k Redux Mod",
+    "title": "248k Redux Temporary Fork",
     "author": "Suplanker",
     "factorio_version": "2.0",
-    "description": "Port of the 248k mod by PreLeyZero from 1.1 to Factorio 2.0. May have compatibility issues with other mods.",
+    "description": "Fork of 248k for personal use (k2so support)",
     "dependencies": [
         "base >= 2.0.0",
         "248k-Redux-graphics >= 1.0.0",
